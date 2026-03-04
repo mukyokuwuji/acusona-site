@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title | default("AcuSona - Meridian Sound Healing") }}</title>
+    <meta name="description" content="{{ description | default('Targeted meridian sound therapy.') }}">
+    <link rel="preconnect" href="https://fonts.bunny.net">
+    <link href="https://fonts.bunny.net/css?family=cormorant-garamond:400,500,600&family=josefin-sans:300,400,500&family=inter:400,500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="has-background">
+    <nav class="site-nav">
+      <div class="nav-inner">
+        <a href="/" class="nav-logo" aria-label="AcuSona home">
+          <img src="/img/icon.svg" alt="" class="nav-icon">
+          <span class="nav-brand">AcuSona</span>
+        </a>
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links">
+          <li><a href="/"{% if page.url == "/" %} class="active"{% endif %}>Home</a></li>
+          <li><a href="/about/"{% if page.url == "/about/" %} class="active"{% endif %}>Our Story</a></li>
+          <li><a href="/treatments/"{% if page.url == "/treatments/" %} class="active"{% endif %}>Treatments</a></li>
+          <li><a href="/contact/"{% if page.url == "/contact/" %} class="active"{% endif %}>Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    {{ content | safe }}
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; AcuSona <span id="copy-year">{{ build.timestamp | getYear }}</span> | Meridian Sound Healing</div>
+        <div class="last-updated">Last updated on {{ build.timestamp | displayDate('en-GB') }}</div>
+      </div>
+    </footer>
+    <script src="/js/main.js" defer></script>
+</body>
+</html>

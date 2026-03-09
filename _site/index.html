@@ -1,65 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AcuSona - Meridian Sound Healing</title>
-<meta name="description" content="Targeted meridian sound therapy combining therapeutic Thai acupressure, Qigong, Yin Yoga and Tibetan singing bowl sound healing.">
-<link rel="preconnect" href="https://fonts.bunny.net">
-<link href="https://fonts.bunny.net/css?family=cormorant-garamond:400,500,600&family=josefin-sans:300,400&family=inter:400&display=swap" rel="stylesheet" />
-<style>
-*{margin:0;padding:0;box-sizing:border-box}
-html,body{height:100%}
-body{
-  font-family:'Inter',system-ui,sans-serif;
-  background:linear-gradient(160deg,#c8d8dc 0%,#d4dfe2 25%,#e0e8ea 50%,#d6dfe1 75%,#cad6d9 100%);
-  background-attachment:fixed;
-  display:flex;align-items:center;justify-content:center;
-  min-height:100vh;
-}
-body::before{
-  content:'';position:fixed;top:0;left:0;right:0;bottom:0;
-  background-image:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23000000' fill-opacity='0.02'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-  pointer-events:none;z-index:0;
-}
-.card{
-  background-color:rgba(250,250,248,0.93);
-  border-radius:12px;
-  box-shadow:0 12px 40px rgba(0,0,0,0.10),0 2px 8px rgba(0,0,0,0.06);
-  padding:4em 5em;
-  text-align:center;
-  position:relative;z-index:1;
-  animation:rise 0.8s ease-out;
-}
-@keyframes rise{from{transform:translateY(20px);opacity:0}to{transform:translateY(0);opacity:1}}
-.logo{max-width:400px;margin:0 auto 2em}
-.tagline{
-  font-family:'Cormorant Garamond',Georgia,serif;
-  font-size:1.15em;color:#3D7A8A;font-weight:400;line-height:1.65;
-  max-width:460px;margin:0 auto;
-}
-@media(max-width:600px){
-  .card{padding:3em 2em;margin:1em}
-  .logo{max-width:280px}
-  .tagline{font-size:1.05em}
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AcuSona | Meridian Sound Healing</title>
+    <meta name="description" content="Targeted meridian sound therapy.">
+    <link rel="preconnect" href="https://fonts.bunny.net">
+    <link href="https://fonts.bunny.net/css?family=cormorant-garamond:400,500,600&family=josefin-sans:300,400,500&family=inter:400,500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/style.css">
 </head>
-<body>
-<div class="card">
-  <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 190" width="680" height="190">
-    <path d="M 38,128 A 22,22 0 1,1 52,90" fill="none" stroke="#2E5A6B" stroke-width="1.6" stroke-linecap="round" opacity="0.45"/>
-    <path d="M 52,90 A 22,22 0 0,1 56,96" fill="none" stroke="#2E5A6B" stroke-width="0.8" stroke-linecap="round" opacity="0.25"/>
-    <text x="76" y="128" font-family="Cormorant Garamond, Georgia, serif" font-size="96" font-weight="500" fill="#2E5A6B" letter-spacing="4">AcuSona</text>
-    <line x1="78" y1="148" x2="660" y2="148" stroke="#2E5A6B" stroke-width="0.7" opacity="0.25"/>
-    <circle cx="150" cy="148" r="1.8" fill="#2E5A6B" opacity="0.3"/>
-    <circle cx="270" cy="148" r="1.8" fill="#2E5A6B" opacity="0.25"/>
-    <circle cx="390" cy="148" r="1.8" fill="#2E5A6B" opacity="0.2"/>
-    <circle cx="510" cy="148" r="1.8" fill="#2E5A6B" opacity="0.15"/>
-    <circle cx="610" cy="148" r="1.8" fill="#2E5A6B" opacity="0.1"/>
-    <text x="78" y="178" font-family="Josefin Sans, sans-serif" font-size="13" font-weight="300" fill="#8A9A9E" letter-spacing="5.5">MERIDIAN SOUND HEALING</text>
-  </svg>
-  <p class="tagline">Four-hands meridian sound therapy combining therapeutic Thai acupressure, healing Qigong, Yin Yoga and Tibetan singing bowl sound healing.</p>
+<body class="has-background">
+    <nav class="site-nav">
+      <div class="nav-inner">
+        <a href="/" class="nav-logo" aria-label="AcuSona home">
+          <img src="/img/icon.svg" alt="" class="nav-icon">
+          <span class="nav-brand">AcuSona</span>
+        </a>
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links">
+          <li><a href="/" class="active">Home</a></li>
+          <li><a href="/about/">Our Story</a></li>
+          <li><a href="/treatments/">Treatments</a></li>
+          <li><a href="/contact/">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    
+<div class="page-wrapper">
+
+  <div class="hero">
+    <img src="/img/logo.svg" alt="AcuSona | Meridian Sound Healing" class="hero-logo">
+    <p class="hero-intro">
+      A signature four-hands healing approach weaving together therapeutic Thai acupressure,
+      healing Qigong, Yin Yoga and Deep Resonance Sound Healing with Tibetan singing bowls.
+    </p>
+  </div>
+
+  <hr class="section-divider">
+
+  <p class="section-label">What We Offer</p>
+  <h2>Targeted Meridian Sound Treatment</h2>
+
+  <p>
+    Rooted in the principles of Traditional Chinese Medicine, our treatments work directly with
+    meridian pathways and acupuncture points to address specific symptoms and conditions. Rather
+    than offering a generalised wellness experience, every session is precisely tailored to
+    your body, your symptoms and your goals.
+  </p>
+
+  <div class="four-hands-box">
+    <p class="four-hands-heading">Four-Hands Treatment</p>
+    <p>
+      Every AcuSona session is delivered by both Jenny and Seb working together: two
+      practitioners, four hands, one unified treatment. This allows us to work simultaneously
+      on meridian pathways, combining acupressure and sound healing in real time
+      for a depth of treatment that a single practitioner cannot achieve alone.
+    </p>
+    <p>
+      Sessions are available for <strong>individual clients</strong> and <strong>couples</strong>.
+    </p>
+  </div>
+
+  <ul class="features">
+    <li>Nuad Kod Jud - therapeutic Thai acupressure targeting specific meridian pathways</li>
+    <li>Deep Resonance Sound Healing with Tibetan singing bowls placed on and around the body</li>
+    <li>Healing Qigong - guided energy cultivation for self-regulation and recovery</li>
+    <li>Yin Yoga - long-held postures working deep into connective tissue and meridian lines</li>
+    <li>Integrated four-hands treatment protocols drawing from all four disciplines</li>
+    <li>Sessions tailored to your specific complaints and conditions</li>
+  </ul>
+
+  <div class="disclaimer-box">
+    <p>
+      <strong>Please note:</strong> Our treatments are offered as complementary therapy rooted mainly in
+      the principles of Traditional Chinese Medicine. While they have been shown to be highly
+      effective in addressing a wide range of symptoms and conditions, they are not a substitute
+      for medical diagnosis or treatment. If you are currently under medical care, please continue
+      to consult your healthcare provider.
+    </p>
+  </div>
+
+  <hr class="section-divider">
+  <p class="section-label">Your Practitioners</p>
+  <h2>Two Traditions, One Practice</h2>
+
+  <div class="shared-story">
+    <p>
+      AcuSona was born from a cross-cultural partnership, each practitioner bringing extensive
+      experience in Eastern healing arts. What unites Jenny and Seb is a shared commitment to
+      authentic, targeted therapeutic work - not trends, not wellness aesthetics, but deep
+      practice rooted in tradition and informed by direct experience with the body's meridian
+      system.
+    </p>
+    <p>
+      Together, they have developed a signature four-hands approach that combines the precision
+      of therapeutic Thai acupressure with the transformative power of Tibetan singing bowl
+      resonance, supported by Qigong and Yin Yoga as complementary pathways to healing.
+    </p>
+  </div>
+
+  <div class="practitioners">
+    <div class="practitioner-card">
+      <img src="/img/Jsq.jpg" alt="Jenny" class="practitioner-photo">
+      <div class="practitioner-name">Jenny</div>
+      <div class="practitioner-role">Practitioner</div>
+      <p class="practitioner-bio">Jenny is a Registered Yoga Teacher (RYT) with Yoga Alliance, bringing over a decade of dedicated experience in yoga practice and teaching. She has guided a diverse range of students and has been actively involved in leading and contributing to numerous 200-hour and 500-hour Yoga Teacher Training programmes, mentoring and supporting the next generation of yoga teachers. In recent years she has expanded her practice into sound healing, completing extensive training in meridian sound healing, therapeutic sound, breathwork and meditation. Known for her calm presence and authentic approach, these skills now sit at the heart of the AcuSona method and inform every four-hands session she delivers alongside Seb.</p>
+    </div>
+    <div class="practitioner-card">
+      <img src="/img/Ssq.jpg" alt="Jenny" class="practitioner-photo">
+      <div class="practitioner-name">Seb</div>
+      <div class="practitioner-role">Practitioner</div>
+      <p class="practitioner-bio">Seb brings over two decades of training in Asian healing arts to his work at AcuSona. He has practised Yoga since 1997, studying with masters in Japan and India, and is a certified Yoga teacher through IYF Asia, qualified in South Korea. Since 2010 he has trained extensively in authentic Qigong, studying and practising with masters across Mainland China, Hong Kong, Japan, Indonesia, Thailand and Scotland. He is also a certified Therapeutic Thai bodywork therapist and instructor, accredited by TTMA Japan since 2018. His deep understanding of Qi cultivation, the principles of Traditional Chinese Medicine as they relate to energy work, and hands-on therapeutic bodywork informs every four-hands session he delivers alongside Jenny.</p>
+    </div>
+  </div>
+
+
+<!--
+  <div class="cta-container">
+    <p class="cta-text">Ready to begin your healing journey?</p>
+<div class="booking-buttons">
+  <a class="book-btn book-btn--wa" href="https://wa.me/YOURNUMBERHERE?text=Hi%2C%20I'd%20like%20to%20book%20an%20AcuSona%20session.%20Thank%20you!" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    WhatsApp
+  </a>
+  <a class="book-btn book-btn--zalo" href="https://zalo.me/YOURNUMBERHERE" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.49 10.272l-1.892 2.658H8.96L12.073 8.5h2.27v4.43h-1.852v-2.658zm-.38 3.902h2.242v1.244h-2.243v1.854H10.86v-1.854H5.76v-1.025l4.72-6.393h1.63v6.174zM12 0C5.373 0 0 5.037 0 11.25c0 3.14 1.342 5.988 3.504 8.022-.09 1.37-.476 3.318-1.282 4.575 0 0 2.63-.424 4.942-2.01A13.39 13.39 0 0012 22.5c6.627 0 12-5.037 12-11.25S18.627 0 12 0z"/></svg>
+    Zalo
+  </a>
+  <a class="book-btn book-btn--ig" href="https://ig.me/m/YOURHANDLE" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+    Instagram
+  </a>
+  <a class="book-btn book-btn--fb" href="https://m.me/YOURPAGEID?text=Hi%2C%20I'd%20like%20to%20book%20an%20AcuSona%20session.%20Thank%20you!" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 4.975 0 11.111c0 3.497 1.745 6.616 4.472 8.652V24l4.086-2.242c1.09.301 2.246.464 3.442.464 6.627 0 12-4.974 12-11.111C24 4.975 18.627 0 12 0zm1.193 14.963l-3.056-3.26-5.963 3.26L10.733 8.2l3.13 3.26 5.889-3.26-6.56 6.763z"/></svg>
+    Messenger
+  </a>
 </div>
+  </div>
+-->
+
+</div>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; AcuSona <span id="copy-year">2026</span> | Meridian Sound Healing</div>
+        <div class="last-updated">Last updated on 9 March 2026</div>
+      </div>
+    </footer>
+    <script src="/js/main.js" defer></script>
 </body>
 </html>

@@ -1,0 +1,10 @@
+# This file makes Netlify publish only the "closed" folder.
+# To restore the full website, delete this file and the "closed" folder, then push.
+[build]
+  publish = "closed"
+  command = "echo 'AcuSona closed - publishing closure page only'"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
